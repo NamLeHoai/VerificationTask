@@ -70,7 +70,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
             while true {
                 self.locationManager.startUpdatingLocation()
-                sleep(2)
+                sleep(360)
                 if ((self.workItem1?.isCancelled) == true) {
                     break
                 }
@@ -85,7 +85,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 self.percentUsage = abs(self.level - self.batteryLevel)
                 self.LOfFeedItems.append("\(String(self.percentUsage))%")
                 self.level = self.batteryLevel
-                sleep(1)
+                sleep(540)
                 if ((self.workItem2?.isCancelled) == true) {
                     break
                 }
